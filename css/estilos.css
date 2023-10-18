@@ -1,0 +1,252 @@
+body{
+	font-size: 15px;
+	font-family: Arial,Helvetica;sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #F4F4F4;
+}
+
+/*ESTILOS GLOVAJES*/
+
+.contenedor{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+ul{
+	margin: 10;
+	padding: 0;
+}
+
+.boton1{
+	height: 38px;
+	background-color: #E8491D;
+	border: 0;
+	color: #FFFFFF;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*Encabezado*/
+
+header{
+	background-color: #24282B;
+	color: #ffffff;
+	padding top: 30px;
+	min-height: 70px;
+	border-bottom: 5px solid #1293d4 ;
+}
+
+header a{
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header li{
+	display: inline;
+	padding-top: 0px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+
+header #marca{
+	float: left;
+}
+
+header #marca h1{
+	margin: 10;
+}
+
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+
+header .resaltado{
+	color: #1293D4;
+	font-weight: bold;
+}
+
+header .actual a{
+	color: #1293D4;
+	font-weight: bold;
+}
+
+header a:hover{
+	color: #cccccc;
+	font-weight: bold;
+}
+/*CABECERA*/
+
+#cabecera{
+	min-height: 400px;
+background: url('../img/cabecera.jpg') no-repeat;
+	background-position: 0 -400px;
+	text-align: center;
+	color: #ffffff;
+}
+
+#cabecera h1{
+	font-size: 60px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#cabecera p{
+	font-size: 25px;
+}
+
+/*FORMULARIO*/
+
+#boletin{
+	padding: 15px;
+	color: #ffffff;
+	background-color: #24282b;
+}
+
+#boletin h1{
+	float: left;
+}
+
+#boletin form{
+	float: right;
+	padding-top: 15px;
+}
+
+#boletin input[type="email"]{
+	height: 25px;
+	width: 250px;
+	padding: 5px;
+}
+
+/*CAJAS QUE ALMACENAN LOS LOGOS*/
+
+#cajas{
+	margin-top: 20px;
+}
+
+#cajas .caja{
+	float: left;
+	text-align: center;
+	width: 30%;
+}
+
+#cajas .caja img{
+	width: 100px;
+}
+
+/*PAGINA NOSOTROS*/
+/*LATERAL*/
+
+aside#lateral{
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+}
+
+.oscuro{
+	background-color: #35424A;
+	color: #ffffff;
+	padding: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+article#main-col{
+	float: left;
+	width: 65%;
+}
+
+/*servicios*/
+
+ul#servicios li{
+	list-style: none;
+	padding: 20px;
+	border: 1px solid #cccccc;
+	margin-bottom: 5px;
+	background-color: #E6E6E6;
+}
+
+footer{
+	color: #ffffff;
+	background-color: #1293D4;
+	text-align: center;
+	padding: 20px;
+}
+
+input, textArea{
+	width: 100%;
+	height: 35px;
+	border: 1px solid gray;
+	margin-bottom: 5px;
+}
+
+textArea{
+	height: 120px;
+}
+
+input[type="submit"]{
+	background-color: #E8491D;
+	color: #FFFFFF;
+}
+
+/*Formulario de  contacto*/
+
+input, textArea{
+	width: 100%;
+	height: 35px;
+	border: 1px solid gray;
+	margin-bottom: 5px;
+}
+
+textArea{
+	height: 120px;
+}
+
+input[type="submit"]{
+	background-color: #E84891D;
+	color: #FFFFFF;
+}
+
+footer{
+	color: #ffffff;
+	background-color: #1293D4;
+	text-align: center;
+	padding: 20px;
+}
+
+/* Media Queries - responsive*/
+
+@media(max-width: 768px){
+	header #marca,
+	header nav,
+	header nav li,
+	#boletin h1,
+	#boletin form,
+	#cajas .caja,
+	article#main-col,
+	aside#lateral{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	header{
+		padding-bottom: 20px;
+	}
+	#boletin h1{
+		margin-top: 40px;
+	}
+	#boletin buttom{
+		display: block;
+		width: 100%;
+	}
+
+	#boletin form input[type="email"]{
+		width: 100%;
+		margin-bottom: 5%;
+	}
+}
